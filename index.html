@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Registration Form</h1>
+            <hr id="indicator">
+        </div>
+       
+        <form action="" name="myForm" onsubmit="return(validate());">
+            <div class="row">
+                <div class="col-1">
+                    <label for="fname" id="name">First Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="fname" name="Name" placeholder="Your first name...">
+                    <small class="error" ></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1">
+                    <label for="email" id="email">Email id</label>
+                </div>
+                <div class="col-2">
+                    <input type="email"  name="Email" placeholder="Your Email...">
+                    <small class="error" ></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="lname" id="phone">Phone no.</label>
+                </div>
+                <div class="col-2">
+                    <input type="number"  name="Phone" placeholder="Your 10 digit mobile number">
+                    <small class="error" ></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="dob" id="dob">Date of birth</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" name="dob" style="resize: none;">
+                    <small class="error" ></small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="dob" id="pass">Password</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" name="password">
+                    <small class="error" ></small>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-2">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
