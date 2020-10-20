@@ -1,92 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-
     <div class="container">
         <div class="header">
-            <h1 class="title">Registration Form</h1>
-            <hr id="indicator">
+            <h2>Registration Form</h2>
         </div>
-       
-        <form action="" name="myForm" onsubmit="return(validate());">
-            <div class="row">
-                <div class="col-1">
-                    <label for="fname" id="name">First Name</label>
-                </div>
-                <div class="col-2">
-                    <input type="text" id="fname" name="Name" placeholder="Your first name...">
-                    <small class="error" ></small>
-                </div>
+        <form action="" id="form" class="form">
+            <div class="form-control">
+                <label for="">First name<sup class="mystar">*</sup></label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+                <i class="fa fa-check-circle"></i>
+                <i  class="fa fa-exclamation-circle"></i>
+                <small class="error">Error </small>     
             </div>
-            <div class="row">
-                <div class="col-1">
-                    <label for="lname">Last Name</label>
-                </div>
-                <div class="col-2">
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
-                  
-                </div>
+            <div class="form-control">
+                <label for="">Last name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+                <i class="fa fa-check-circle"></i>
+                <i  class="fa fa-exclamation-circle"></i>
+                <small class="error">Error </small>     
             </div>
-
-            <div class="row">
-                <div class="col-1">
-                    <label for="email" id="email">Email id</label>
-                </div>
-                <div class="col-2">
-                    <input type="email"  name="Email" placeholder="Your Email...">
-                    <small class="error" ></small>
-                </div>
+            <div class="form-control">
+                <label for="">Email<sup class="mystar">*</sup></label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email id">
+                <i class="fa fa-check-circle"></i>
+                <i  class="fa fa-exclamation-circle"></i>
+                <small class="error">Error </small>     
             </div>
-            <div class="row">
-                <div class="col-1">
-                    <label for="lname" id="phone">Phone no.</label>
-                </div>
-                <div class="col-2">
-                    <input type="number"  name="Phone" placeholder="Your 10 digit mobile number">
-                    <small class="error" ></small>
-                </div>
+            <div class="form-control">
+                <label for="">Phone<sup class="mystar">*</sup></label>
+                <input type="number" name="phone" id="phone" placeholder="Enter your 10 digit Phone number">
+                <i class="fa fa-check-circle"></i>
+                <i  class="fa fa-exclamation-circle"></i>
+                <small class="error">Error </small>     
             </div>
-            <div class="row">
-                <div class="col-1">
-                    <label for="dob" id="dob">Date of birth</label>
-                </div>
-                <div class="col-2">
-                    <input type="date" name="dob" style="resize: none;">
-                    <small class="error" ></small>
-                </div>
+            <div class="form-control">
+                <label for="">Date of birth<sup class="mystar">*</sup></label>
+                <input type="date" name="fname" id="dob" placeholder="Enter your date of birth">
+                <i class="fa fa-check-circle"></i>
+                <i  class="fa fa-exclamation-circle"></i>
+                <small class="error">Error </small>     
             </div>
-            <div class="row">
-                <div class="col-1">
-                    <label for="dob" id="pass">Password</label>
-                </div>
-                <div class="col-2">
-                    <input type="password" name="password">
-                    <small class="error" ></small>
-                </div>
+            <div class="form-control">
+                <label for="">Password<sup class="mystar">*</sup></label>
+                <input type="password" name="pass" id="pass" placeholder="Enter your password ">
+                <i class="fa fa-check-circle"></i>
+                <i  class="fa fa-exclamation-circle"></i>
+                <small class="error">Error </small>     
             </div>
-
-
-
-            <div class="row">
-                <div class="col-2">
-                    <button class="btn">Submit</button>
-                </div>
-
-            </div>
+            <input type="submit" name="" value="Submit" class="btn" id="">
         </form>
     </div>
-
 </body>
-
+<script src="script.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>
