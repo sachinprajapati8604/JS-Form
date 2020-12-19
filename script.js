@@ -15,17 +15,17 @@ form.addEventListener('submit', (event) => {
 })
 
 const sendData = (fnameVal, sRate, count) => {
-    if (sRate === count) {
-        swal("Welcome! " + fnameVal + " Registration Successful");
+     if (sRate === count) {
+         swal("Welcome! " + fnameVal + " Registration Successful");
        
-        document.getElementById('form').reset();  //for reset the field after submission
+         document.getElementById('form').reset();  //for reset the field after submission
         
-        getnormal();
+       getnormal();
        
-      //  location.href = "user.html?fname=${fnameVal}";
-    }
+//       //  location.href = "user.html?fname=${fnameVal}";
+     }
 
-}
+ }
 
 // ---------for final data validation -----by fetch arrow funtion
 
